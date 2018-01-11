@@ -111,6 +111,6 @@ if __name__ == '__main__':
     args = parser.parse_args()
     if args.file is None:
         # print("Error")
-        main("/tmp/vim_tmp_buf.text")
+        main("/tmp/vim_tmp_buf.text", 1)
     else:
-        main(args.file, args.flg)
+        main(args.file, int(args.flg))
